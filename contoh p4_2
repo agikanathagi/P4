@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int operand1;
+    int operand2;
+    int hasil;
+    int menu;
+
+    cout<<"0. Keluar"<<endl;
+    cout<<"1. Tambah"<<endl;
+    cout<<"2. Kurang"<<endl;
+    cout<<"Masukan Pilihan : ";
+    cin>>menu;
+
+    while(menu!=0){
+        cout<<"Operand 1 : ";
+        cin>>operand1;
+        cout<<"Operand 2 : ";
+        cin>>operand2;
+
+        if(menu==1){
+            hasil = operand1+operand2;
+            cout<<operand1<<" + "<<operand2<<" = "<<hasil;
+        }else if(menu==2){
+            hasil = operand1-operand2;
+            cout<<operand1<<" - "<<operand2<<" = "<<hasil;
+        }
+        cout<<endl;
+        cout<<"0. Keluar"<<endl;
+        cout<<"1. Tambah"<<endl;
+        cout<<"2. Kurang"<<endl;
+        cout<<"Masukan Pilihan : ";
+        cin>>menu;
+    }
+    cout<<"Bye Bye";
+}
