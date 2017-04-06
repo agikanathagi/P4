@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int Pangkat,Angka,i,Hasil;
+
+    cout<<"Masukkan Angka : ";
+    cin>>Angka;
+    cout<<"Masukkan Pangkat :";
+    cin>>Pangkat;
+    cout<<endl;
+    hasil=1;
+    for(i=1;i<=Pangkat;i++){
+        Hasil=Hasil*Angka;
+    }
+    cout<<endl<<"Hasil"<<Angka<<"^"<<Pangkat<<"="<<Hasil<<endl;
+
+return 0;
+}
